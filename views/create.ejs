@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Post</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="py-3">
+            <h1 class="h3">Create New Post</h1>
+        </header>
+
+        <form action="/create" method="POST" class="bg-light p-4 rounded">
+            <div class="form-group">
+                <label for="title">Post Title</label>
+                <input type="text" id="title" name="title" class="form-control" placeholder="Post Title" required>
+            </div>
+
+            <div class="form-group">
+                <label for="content">Post Content</label>
+                <textarea id="content" name="content" class="form-control" rows="5" placeholder="Write your post here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-success">Create Post</button>
+        </form>
+    </div>
+</body>
+</html>
